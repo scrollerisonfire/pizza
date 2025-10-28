@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="bg">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizza  — Пицария</title>
+    <link rel="stylesheet" href="blabla.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="wrap row">
+            <a class="brand" href="#" aria-label="Pizza Primo — начало">
+                <div class="logo" aria-hidden="true"></div>
+                <strong>Pizza Primo</strong>
+            </a>
+            <div class="grow"></div>
+            <button class="cart-button" id="cartJump">
+                <span>Количка</span>
+                <span class="pill" id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="wrap grid">
+        <section class="card" aria-label="Menu">
+            <div class="head">
+                <h2 style="margin:0">Menu</h2>
+                <input id="search" class="search" type="search" placeholder="Search for pizza"
+                    aria-label="Търси пица" />
+            </div>
+            <div id="menu" class="menu" aria-live="polite"></div>
+        </section>
+
+        <aside class="card cart" id="cart" aria-label="Количка">
+            <h2>Вашата количка</h2>
+            <div id="cartList" class="cart-list"></div>
+            <div id="cartEmpty" class="cart-empty" role="status">Количката е празна. Добави нещо вкусно! 🍕</div>
+            <div class="summary" id="summary" hidden>
+                <div class="row"><span>Междинна сума</span><strong id="subtotal">0,00 лв.</strong></div>
+                <div class="row"><span>Доставка</span><span id="shipping">Безплатна</span></div>
+                <div class="row total"><span>Общо</span><span id="grandTotal">0,00 лв.</span></div>
+                <button class="btn primary checkout" id="checkoutBtn">Поръчай</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="wrap">© <span id="year"></span> Pizza Primo. Всички права запазени.</div>
+    </footer>
+    <script src="blabla.js"></script>
+</body>
+
+</html>
